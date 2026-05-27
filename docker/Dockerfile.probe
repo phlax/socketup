@@ -1,0 +1,4 @@
+FROM scratch
+COPY socketup /socketup
+COPY docker/socketup.yaml /etc/socketup/socketup.yaml
+ENTRYPOINT ["/socketup"]

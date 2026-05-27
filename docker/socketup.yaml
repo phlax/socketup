@@ -1,0 +1,23 @@
+defaults:
+  timeout_ms: 1000
+  mode: all
+
+checks:
+  admin:
+    type: tcp
+    targets:
+      - "127.0.0.1:9901"
+
+  ingress:
+    type: tcp
+    mode: all
+    targets:
+      - "127.0.0.1:8080"
+      - "127.0.0.1:9901"
+
+  any-listener:
+    type: tcp
+    mode: any
+    targets:
+      - "127.0.0.1:8080"
+      - "127.0.0.1:9901"
