@@ -1,0 +1,9 @@
+pub const SUCCESS: u8 = 0;
+pub const CHECK_FAILED: u8 = 1;
+pub const BAD_CLI_USAGE: u8 = 2;
+pub const CONFIG_NOT_READABLE: u8 = 3;
+pub const CONFIG_PARSE_ERROR: u8 = 4;
+pub const CONFIG_VALIDATION_ERROR: u8 = 5;
+pub const CHECK_NOT_FOUND: u8 = 6;
+pub const TIMEOUT: u8 = 7;
+pub const INTERNAL_ERROR: u8 = 8;

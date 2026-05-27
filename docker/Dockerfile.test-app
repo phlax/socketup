@@ -1,0 +1,3 @@
+FROM gcr.io/distroless/base-nossl-debian12:nonroot
+COPY socketup-testapp /socketup-testapp
+ENTRYPOINT ["/socketup-testapp"]
